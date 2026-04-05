@@ -154,7 +154,7 @@ void test(vector <double> & dane, const int n,int id){
     }
             resett(dane,n);
         }
-
+        cout<<GREEN<<"Poprawnie policzono i zapisano!!"<<RESET<<endl;
     }else if(id==2){
         for (int p =1;p<17;p++){
             ofstream plik("wielo_watkowo.txt", ios::app);
@@ -180,6 +180,7 @@ void test(vector <double> & dane, const int n,int id){
             
             }
         }
+        cout<<GREEN<<"Poprawnie policzono i zapisano!!"<<RESET<<endl;
     }else if(id==3){
         for (int i = 0; i < 105; i++) {
             auto start = chrono::high_resolution_clock::now();
@@ -200,6 +201,7 @@ void test(vector <double> & dane, const int n,int id){
             time = 0;
             resett(dane, n);
         }
+        cout<<GREEN<<"Poprawnie policzono i zapisano!!"<<RESET<<endl;
     }else{
         cout<<RED<<BOLD<<"Blad!!!!"<<RESET<<endl;
     }
