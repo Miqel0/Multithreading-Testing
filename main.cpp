@@ -145,7 +145,7 @@ void test(vector <double> & dane, const int n,int id){
             chrono::duration<double, std::milli> czas_ms = stop - start;
             time=czas_ms.count();
             //prntTablica("Klasyczne","Avg: ",cleanNum(avg),"Std: ",cleanNum(std),"Time (ms): ",cleanNum(time),"Ilosc: ",cleanNum(dane.size()));
-
+            cout<<i<<endl;
             ofstream plik("klasycznie.txt", ios::app);
             if (plik.is_open()) {
             plik << time <<endl;
@@ -169,7 +169,7 @@ void test(vector <double> & dane, const int n,int id){
                 chrono::duration<double, std::milli> czas_ms = stop - start;
                 time=czas_ms.count();
                 //prntTablica("Watki","Avg: ",cleanNum(avg),"Std: ",cleanNum(std),"Time (ms): ",cleanNum(time),"Ilosc: ",cleanNum(dane.size()));
-    
+                cout<<p<<" "<<i<<endl;
                 ofstream plik("wielo_watkowo.txt", ios::app);
                 if (plik.is_open()) {
                     plik << time <<endl;
@@ -190,7 +190,7 @@ void test(vector <double> & dane, const int n,int id){
             time = czas_ms.count();
             
             //prntTablica("STL Par", "Avg: ", cleanNum(avg), "Std: ", cleanNum(std), "Time (ms): ", cleanNum(time), "Ilosc: ", cleanNum(dane.size()));
-
+            cout<<i<<endl;
             // Zapis do pliku
             ofstream plik("op.txt", ios::app);
             if (plik.is_open()) {
